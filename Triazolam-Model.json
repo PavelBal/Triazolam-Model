@@ -108,12 +108,12 @@
         },
         {
           "Path": "AADAC|Relative expression in blood cells",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "AADAC|Relative expression in plasma",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
@@ -130,12 +130,12 @@
         },
         {
           "Path": "Organism|Bone|Intracellular|AADAC|Relative expression",
-          "Value": 4.8717948718E-05,
+          "Value": 4.8717948718e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Brain|Intracellular|AADAC|Relative expression",
-          "Value": 3.9743589744E-05,
+          "Value": 3.9743589744e-05,
           "ValueOrigin": {}
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|AADAC|Relative expression",
-          "Value": 5.7051282051E-05,
+          "Value": 5.7051282051e-05,
           "ValueOrigin": {}
         },
         {
@@ -616,17 +616,17 @@
           "Percentile": 0.0,
           "DistributionMetaData": [
             {
-              "Mean": 1E-14,
+              "Mean": 1e-14,
               "Deviation": 1.6,
               "Distribution": "LogNormal"
             },
             {
-              "Mean": 1.915059E-05,
+              "Mean": 1.915059e-05,
               "Deviation": 1.6,
               "Distribution": "LogNormal"
             },
             {
-              "Mean": 5.486795E-05,
+              "Mean": 5.486795e-05,
               "Deviation": 1.6,
               "Distribution": "LogNormal"
             },
@@ -745,17 +745,17 @@
           "Points": [
             {
               "X": 0.0,
-              "Y": 1E-14,
+              "Y": 1e-14,
               "RestartSolver": false
             },
             {
               "X": 0.08333334,
-              "Y": 1.915059E-05,
+              "Y": 1.915059e-05,
               "RestartSolver": false
             },
             {
               "X": 0.1666667,
-              "Y": 5.486795E-05,
+              "Y": 5.486795e-05,
               "RestartSolver": false
             },
             {
@@ -918,7 +918,7 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|OATP1B1|Relative expression",
-          "Value": 4.0079365079E-05,
+          "Value": 4.0079365079e-05,
           "ValueOrigin": {}
         },
         {
@@ -1480,7 +1480,7 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 7.0220146601E-05,
+              "Value": 7.0220146601e-05,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
@@ -2176,7 +2176,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Kroboth1995_0.25mg_iv-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Kroboth1995_0.25mg_iv|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Kroboth 1995 - IV administration - Triazolam - IV - 0.25 mg - Plasma - agg. (n=12)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Kroboth 1995 - IV administration - Triazolam - IV - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Kroboth 1995 - IV administration - Triazolam - IV - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nKroboth1995_0.25mg_iv\n2019-10-29 08:56"
+        }
+      ]
     },
     {
       "Name": "Smith1987_0.125mg",
@@ -2456,7 +2525,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith1987_0.125mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Smith1987_0.125mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Smith 1987 - 0.125 mg - Triazolam - IV - 0.125 mg - Plasma - agg. (n=5)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Smith 1987 - 0.125 mg - Triazolam - IV - 0.125 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Smith 1987 - 0.125 mg - Triazolam - IV - 0.125 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nSmith1987_0.125mg\n2019-10-29 08:57"
+        }
+      ]
     },
     {
       "Name": "Smith1987_0.25mg",
@@ -2736,7 +2874,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith1987_0.25mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Smith1987_0.25mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Smith 1987 - 0.25 mg - Triazolam - IV - 0.25 mg - Plasma - agg. (n=5)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Smith 1987 - 0.25 mg - Triazolam - IV - 0.25 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Smith 1987 - 0.25 mg - Triazolam - IV - 0.25 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nSmith1987_0.25mg\n2019-10-29 08:59"
+        }
+      ]
     },
     {
       "Name": "Smith1987_0.5mg",
@@ -3016,7 +3223,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith1987_0.5mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Smith1987_0.5mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Smith 1987 - 0.5 mg - Triazolam - IV - 0.5 mg - Plasma - agg. (n=5)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Smith 1987 - 0.5 mg - Triazolam - IV - 0.5 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Smith 1987 - 0.5 mg - Triazolam - IV - 0.5 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nSmith1987_0.5mg\n2019-10-29 08:59"
+        }
+      ]
     },
     {
       "Name": "Smith1987_0.75mg",
@@ -3296,7 +3572,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith1987_0.75mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Smith1987_0.75mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Smith 1987 - 0.75 mg - Triazolam - IV - 0.75 mg - Plasma - agg. (n=5)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Smith 1987 - 0.75 mg - Triazolam - IV - 0.75 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Smith 1987 - 0.75 mg - Triazolam - IV - 0.75 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nSmith1987_0.75mg\n2019-10-29 09:00"
+        }
+      ]
     },
     {
       "Name": "Smith1987_1mg",
@@ -3576,7 +3921,76 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith1987_1mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Smith1987_1mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Smith 1987 - 1.0 mg - Triazolam - IV - 1 mg - Plasma - agg. (n=5)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Smith 1987 - 1.0 mg - Triazolam - IV - 1 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Smith 1987 - 1.0 mg - Triazolam - IV - 1 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nSmith1987_1mg\n2019-10-29 09:03"
+        }
+      ]
     },
     {
       "Name": "PO_0.125mg",
@@ -3920,7 +4334,165 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001,
+              "Max": 0.00151705,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.125mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.125mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)|Time",
+              "Y": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)|Time",
+              "Y": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.125mg\n2019-10-29 09:05"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.125mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.125mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)|Time",
+              "Y": "Greenblatt 1991 - Young subjects, 0.125 mg - Triazolam - PO - 0.125 mg - Plasma - agg. (n=26)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)-Triazolam-Peripheral Venous Blood-Plasma-ArithmeticMean",
+              "X": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)|Time",
+              "Y": "Moltke 1996 - Triazolam + Placebo (Trial 2) - Triazolam - PO - 0.125 mg - Plasma - agg. (n=9)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.125mg\n2019-10-29 09:05"
+        }
+      ]
     },
     {
       "Name": "PO_0.25mg",
@@ -4326,7 +4898,429 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 2e-06,
+              "Max": 0.004102147,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.25mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.25mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Varhe 1996c - Triazolam + placebo - Triazolam - Plasma - agg. (n=8)-ArithmeticMean",
+              "X": "Varhe 1996c - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|Time",
+              "Y": "Varhe 1996c - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C000",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1996b - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Varhe 1996b - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Varhe 1996b - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 14,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1996a - Triazolam + placebo - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Varhe 1996a - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Varhe 1996a - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#8080FF",
+                "LegendIndex": 13,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1994 - Triazolam + placebo - Triazolam - Plasma - agg. (n=9)-ArithmeticMean",
+              "X": "Varhe 1994 - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=9)|Time",
+              "Y": "Varhe 1994 - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=9)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C0C000",
+                "LegendIndex": 12,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - Plasma - agg. (n=18)-ArithmeticMean",
+              "X": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - PO - 0.25 mg - Plasma - agg. (n=18)|Time",
+              "Y": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - PO - 0.25 mg - Plasma - agg. (n=18)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#808080",
+                "LegendIndex": 11,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00FF00",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Kroboth 1995 - Oral administration - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Kroboth 1995 - Oral administration - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Kroboth 1995 - Oral administration - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C04000",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C000C0",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2004 - Young females - Triazolam - Plasma - agg. (n=13)-ArithmeticMean",
+              "X": "Greenblatt 2004 - Young females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=13)|Time",
+              "Y": "Greenblatt 2004 - Young females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C0C0",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2004 - Young males - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Greenblatt 2004 - Young males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Greenblatt 2004 - Young males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2000 - Triazolam females - Triazolam - Plasma - agg. (n=8)-ArithmeticMean",
+              "X": "Greenblatt 2000 - Triazolam females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|Time",
+              "Y": "Greenblatt 2000 - Triazolam females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2000 - Triazolam males - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Greenblatt 2000 - Triazolam males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Greenblatt 2000 - Triazolam males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 1989 - Triazolam group - Triazolam - Plasma - agg. (n=11)-ArithmeticMean",
+              "X": "Greenblatt 1989 - Triazolam group - Triazolam - PO - 0.25 mg - Plasma - agg. (n=11)|Time",
+              "Y": "Greenblatt 1989 - Triazolam group - Triazolam - PO - 0.25 mg - Plasma - agg. (n=11)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - Plasma - agg. (n=26)-ArithmeticMean",
+              "X": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - PO - 0.25 mg - Plasma - agg. (n=26)|Time",
+              "Y": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - PO - 0.25 mg - Plasma - agg. (n=26)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.25mg\n2019-10-29 09:06"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.25mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.25mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Varhe 1996c - Triazolam + placebo - Triazolam - Plasma - agg. (n=8)-ArithmeticMean",
+              "X": "Varhe 1996c - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|Time",
+              "Y": "Varhe 1996c - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C000",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1996b - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Varhe 1996b - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Varhe 1996b - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 14,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1996a - Triazolam + placebo - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Varhe 1996a - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Varhe 1996a - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#8080FF",
+                "LegendIndex": 13,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Varhe 1994 - Triazolam + placebo - Triazolam - Plasma - agg. (n=9)-ArithmeticMean",
+              "X": "Varhe 1994 - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=9)|Time",
+              "Y": "Varhe 1994 - Triazolam + placebo - Triazolam - PO - 0.25 mg - Plasma - agg. (n=9)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C0C000",
+                "LegendIndex": 12,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - Plasma - agg. (n=18)-ArithmeticMean",
+              "X": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - PO - 0.25 mg - Plasma - agg. (n=18)|Time",
+              "Y": "O'Connor-Semmes 2001 - Young group, triazolam alone - Triazolam - PO - 0.25 mg - Plasma - agg. (n=18)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#808080",
+                "LegendIndex": 11,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Lilja 2000 - Triazolam with 200 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00FF00",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Kroboth 1995 - Oral administration - Triazolam - Plasma - agg. (n=12)-ArithmeticMean",
+              "X": "Kroboth 1995 - Oral administration - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|Time",
+              "Y": "Kroboth 1995 - Oral administration - Triazolam - PO - 0.25 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C04000",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Hukkinen 1995 - Triazolam with 250 mL water - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#C000C0",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2004 - Young females - Triazolam - Plasma - agg. (n=13)-ArithmeticMean",
+              "X": "Greenblatt 2004 - Young females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=13)|Time",
+              "Y": "Greenblatt 2004 - Young females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=13)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C0C0",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2004 - Young males - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Greenblatt 2004 - Young males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Greenblatt 2004 - Young males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2000 - Triazolam females - Triazolam - Plasma - agg. (n=8)-ArithmeticMean",
+              "X": "Greenblatt 2000 - Triazolam females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|Time",
+              "Y": "Greenblatt 2000 - Triazolam females - Triazolam - PO - 0.25 mg - Plasma - agg. (n=8)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 2000 - Triazolam males - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Greenblatt 2000 - Triazolam males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Greenblatt 2000 - Triazolam males - Triazolam - PO - 0.25 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 1989 - Triazolam group - Triazolam - Plasma - agg. (n=11)-ArithmeticMean",
+              "X": "Greenblatt 1989 - Triazolam group - Triazolam - PO - 0.25 mg - Plasma - agg. (n=11)|Time",
+              "Y": "Greenblatt 1989 - Triazolam group - Triazolam - PO - 0.25 mg - Plasma - agg. (n=11)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - Plasma - agg. (n=26)-ArithmeticMean",
+              "X": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - PO - 0.25 mg - Plasma - agg. (n=26)|Time",
+              "Y": "Greenblatt 1991 - Young subjects, 0.25 mg - Triazolam - PO - 0.25 mg - Plasma - agg. (n=26)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.25mg\n2019-10-29 09:06"
+        }
+      ]
     },
     {
       "Name": "PO_0.5mg",
@@ -4686,7 +5680,253 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 2e-05,
+              "Max": 0.007274954,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.5mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.5mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Villikka 1998 - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Villikka 1998 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Villikka 1998 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C0C0",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Villikka 1997 - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Villikka 1997 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Villikka 1997 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Phillips 1986 - Triazolam alone - Triazolam - Plasma - agg. (n=16)-ArithmeticMean",
+              "X": "Phillips 1986 - Triazolam alone - Triazolam - PO - 0.5 mg - Plasma - agg. (n=16)|Time",
+              "Y": "Phillips 1986 - Triazolam alone - Triazolam - PO - 0.5 mg - Plasma - agg. (n=16)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Ochs 1984 - Control - Triazolam - Plasma - agg. (n=5)-ArithmeticMean",
+              "X": "Ochs 1984 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Ochs 1984 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Friedman 1988 - Control - Triazolam - Plasma - agg. (n=19)-ArithmeticMean",
+              "X": "Friedman 1988 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=19)|Time",
+              "Y": "Friedman 1988 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=19)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Friedman 1986 - Figure 1 - Triazolam - Plasma - agg. (n=54)-ArithmeticMean",
+              "X": "Friedman 1986 - Figure 1 - Triazolam - PO - 0.5 mg - Plasma - agg. (n=54)|Time",
+              "Y": "Friedman 1986 - Figure 1 - Triazolam - PO - 0.5 mg - Plasma - agg. (n=54)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.5mg\n2019-10-29 09:07"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "PO_0.5mg-Triazolam-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "PO_0.5mg|Organism|PeripheralVenousBlood|Triazolam|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Villikka 1998 - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Villikka 1998 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Villikka 1998 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#00C0C0",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Villikka 1997 - Triazolam + placebo - Triazolam - Plasma - agg. (n=10)-ArithmeticMean",
+              "X": "Villikka 1997 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|Time",
+              "Y": "Villikka 1997 - Triazolam + placebo - Triazolam - PO - 0.5 mg - Plasma - agg. (n=10)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Phillips 1986 - Triazolam alone - Triazolam - Plasma - agg. (n=16)-ArithmeticMean",
+              "X": "Phillips 1986 - Triazolam alone - Triazolam - PO - 0.5 mg - Plasma - agg. (n=16)|Time",
+              "Y": "Phillips 1986 - Triazolam alone - Triazolam - PO - 0.5 mg - Plasma - agg. (n=16)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Ochs 1984 - Control - Triazolam - Plasma - agg. (n=5)-ArithmeticMean",
+              "X": "Ochs 1984 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=5)|Time",
+              "Y": "Ochs 1984 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Friedman 1986 - Figure 1 - Triazolam - Plasma - agg. (n=54)-ArithmeticMean",
+              "X": "Friedman 1986 - Figure 1 - Triazolam - PO - 0.5 mg - Plasma - agg. (n=54)|Time",
+              "Y": "Friedman 1986 - Figure 1 - Triazolam - PO - 0.5 mg - Plasma - agg. (n=54)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Friedman 1988 - Control - Triazolam - Plasma - agg. (n=19)-ArithmeticMean",
+              "X": "Friedman 1988 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=19)|Time",
+              "Y": "Friedman 1988 - Control - Triazolam - PO - 0.5 mg - Plasma - agg. (n=19)|ObservedData|Peripheral Venous Blood|Plasma|Triazolam|ArithmeticMean",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Triazolam\nPO_0.5mg\n2019-10-29 09:07"
+        }
+      ]
     }
   ],
   "ObservedData": [
@@ -6330,7 +7570,7 @@
             0.000736492,
             0.0006140646,
             0.00047419552,
-            2.3095621E-05
+            2.3095621e-05
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -6637,7 +7877,7 @@
             0.000705,
             0.0003518,
             0.0001587,
-            7.27E-05
+            7.27e-05
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -6787,7 +8027,7 @@
             0.00057734223,
             0.0003896882,
             0.0002895144,
-            4.898473E-05
+            4.898473e-05
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -8580,7 +9820,7 @@
             0.00093319995,
             0.0007698,
             0.00062919996,
-            8.69E-05
+            8.69e-05
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -8928,7 +10168,7 @@
             0.0007393617,
             0.0005797873,
             0.00048404263,
-            2.12766E-05
+            2.12766e-05
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
