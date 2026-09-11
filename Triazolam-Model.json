@@ -1,6 +1,7 @@
 {
   "Name": "Triazolam-Model",
   "Version": 81,
+  "ApplicationName": "PK-Sim",
   "ExpressionProfiles": [
     {
       "Type": "Enzyme",
@@ -10624,6 +10625,5 @@
         "PO_0.5mg"
       ]
     }
-  ],
-  "ApplicationName": "PK-Sim"
+  ]
 }
