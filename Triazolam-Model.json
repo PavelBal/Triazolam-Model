@@ -1956,12 +1956,6 @@
       ],
       "Parameters": [
         {
-          "Path": "Events|IV_0.25mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
-        {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
           "Unit": "cm/min",
@@ -2304,12 +2298,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|IV_0.125mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
@@ -2654,12 +2642,6 @@
       ],
       "Parameters": [
         {
-          "Path": "Events|IV_0.25mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
-        {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
           "Unit": "cm/min",
@@ -3002,12 +2984,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|IV_0.5mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
@@ -3352,12 +3328,6 @@
       ],
       "Parameters": [
         {
-          "Path": "Events|IV_0.75mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
-        {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
           "Unit": "cm/min",
@@ -3700,12 +3670,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|IV_1mg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 1.0,
-          "Unit": "min",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
@@ -4058,12 +4022,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|PO_0.125mg|Halcion|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
@@ -4562,12 +4520,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|PO_0.25mg|Halcion|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
@@ -5384,12 +5336,6 @@
         }
       ],
       "Parameters": [
-        {
-          "Path": "Events|PO_0.5mg|Halcion|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg",
-          "ValueOrigin": {}
-        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Triazolam|P (interstitial->intracellular)",
           "Value": 0.00015477761992,
